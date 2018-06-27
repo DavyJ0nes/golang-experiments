@@ -7,7 +7,7 @@ Selection of experiments and investigations into the Golang language that I want
 
 ## List of Investigations
 
-- [Visualising Reversing a String](./reverse/reverse.go)
+- [Visualising Reversing a String](./reverse)
 
 ## License
 
