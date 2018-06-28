@@ -8,6 +8,7 @@ Selection of experiments and investigations into the Golang language that I want
 ## List of Investigations
 
 - [Visualising Reversing a String](./reverse)
+- [Implementing tree Command from Scratch](./tree-command)
 
 ## License
 
