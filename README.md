@@ -9,6 +9,8 @@ Selection of experiments and investigations into the Golang language that I want
 
 - [Visualising Reversing a String](./reverse)
 - [Implementing tree Command from Scratch](./tree-command)
+- [Exploring Efficiency of Recursion](./recursion)
+- [CLI Countdown Timer](./timer)
 
 ## License
 
