@@ -13,6 +13,7 @@ Selection of experiments and investigations into the Golang language that I want
 - [CLI Countdown Timer](./timer)
 - [IN PROGRESS: Simple Fibonacci Implementation](./fib)
 - [Testing Best Practices](./testing)
+- [Exploring Channels](./channels)
 
 ## License
 
