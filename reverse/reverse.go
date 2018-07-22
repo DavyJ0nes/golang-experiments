@@ -24,7 +24,7 @@ func Reverse(s string) string {
 	for l, r := 0, len(chars)-1; l < r; l, r = l+1, r-1 {
 		fmt.Printf("l: %v\t\t[%v]\t(%v) | r: %v\t\t[%v]\t(%v)\n", chars[l], l, string(chars[l]), chars[r], r, string(chars[r]))
 		chars[l], chars[r] = chars[r], chars[l]
-		iterations += 1
+		iterations++
 	}
 
 	fmt.Println("---- iterations:", iterations)

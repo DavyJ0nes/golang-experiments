@@ -25,3 +25,9 @@ l: 120        [8]    (x) | r: 112        [9]     (p)
 
 Output:     stnemirepxE gnaloG
 ```
+
+## Run benchmarks
+
+```
+go test -bench=. -benchmem
+```
