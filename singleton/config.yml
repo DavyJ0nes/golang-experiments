@@ -1,0 +1,4 @@
+baseFilePath: /tmp
+machineName: freddie
+daysToKeep: 30
+cpuMultiplier: 100
