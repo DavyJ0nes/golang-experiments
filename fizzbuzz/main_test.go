@@ -46,3 +46,27 @@ func TestChanFizzBuzz(t *testing.T) {
 		t.Errorf("chanFizzBuzz() = %v, want %v", got, want)
 	}
 }
+
+func BenchmarkBasicFizzBuzz(b *testing.B) {
+	b.ResetTimer()
+
+	for i := 0; i < b.N; i++ {
+		basicFizzBuzz(10)
+	}
+}
+
+func BenchmarkImprovedFizzBuzz(b *testing.B) {
+	b.ResetTimer()
+
+	for i := 0; i < b.N; i++ {
+		improvedFizzBuzz(10)
+	}
+}
+
+func BenchmarkChanFizzBuzz(b *testing.B) {
+	b.ResetTimer()
+
+	for i := 0; i < b.N; i++ {
+		chanFizzBuzz(10)
+	}
+}

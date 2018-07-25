@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"runtime/trace"
 	"strconv"
 	"strings"
 )
@@ -14,20 +16,23 @@ func main() {
 	limit := 100
 	// Create 3 instances of fizzbuzz.
 	// 1 for each of the implementation functions
-	fb1 := fizzBuzz{}
-	fb2 := fizzBuzz{}
+	// fb1 := fizzBuzz{}
+	// fb2 := fizzBuzz{}
 	fb3 := fizzBuzz{}
 
 	// Generate the output for each of the implementations
-	fb1.output = basicFizzBuzz(limit)
-	fb2.output = improvedFizzBuzz(limit)
+	// fb1.output = basicFizzBuzz(limit)
+	// fb2.output = improvedFizzBuzz(limit)
+
+	trace.Start(os.Stderr)
+	defer trace.Stop()
 	for out := range chanFizzBuzz(limit) {
 		fb3.output = append(fb3.output, out)
 	}
 
 	// Print output. Not sure why this is useful.
-	fmt.Printf("Basic:\n%s\n\n", fb1)
-	fmt.Printf("Improved:\n%s\n\n", fb2)
+	// fmt.Printf("Basic:\n%s\n\n", fb1)
+	// fmt.Printf("Improved:\n%s\n\n", fb2)
 	fmt.Printf("Channel:\n%s\n", fb3)
 }
 

@@ -11,9 +11,12 @@ Selection of experiments and investigations into the Golang language that I want
 - [Implementing tree Command from Scratch](./tree-command)
 - [Exploring Efficiency of Recursion](./recursion)
 - [CLI Countdown Timer](./timer)
-- [IN PROGRESS: Simple Fibonacci Implementation](./fib)
+- [Simple Fibonacci Implementation](./fib)
+- [FizzBuzz Profiling](./fizzbuzz)
 - [Testing Best Practices](./testing)
 - [Exploring Channels](./channels)
+- [Example Implementation of Singleton Pattern](./singleton)
+- [Exploring Algorithms](./algorithms)
 
 ## License
 
