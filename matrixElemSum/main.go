@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 	matrix := [][]int{
-		[]int{1, 1, 1, 0},
-		[]int{0, 5, 0, 1},
-		[]int{2, 1, 3, 10},
+		{1, 1, 1, 0},
+		{0, 5, 0, 1},
+		{2, 1, 3, 10},
 	}
 	op := matrixElementsSum(matrix)
 	fmt.Println(op)

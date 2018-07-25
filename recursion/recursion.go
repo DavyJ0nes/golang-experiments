@@ -14,9 +14,9 @@ func shapeAreaLooping(n int) int {
 func shapeAreaRecursion(n int) int {
 	if n == 1 {
 		return 1
-	} else {
-		return ((n * 4) - 4) + shapeAreaRecursion(n-1)
 	}
+
+	return ((n * 4) - 4) + shapeAreaRecursion(n-1)
 }
 
 // add all elements of a slice together using recursion
