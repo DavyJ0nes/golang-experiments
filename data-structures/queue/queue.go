@@ -1,10 +1,14 @@
-package main
+package queue
 
 import "errors"
 
 type Queue struct {
 	slice []int
 }
+
+var (
+	ErrEmptyQueue = errors.New("Queue is empty")
+)
 
 // Enqueue Adds an Item to the Queue
 func (q *Queue) Enqueue(i int) {
@@ -16,7 +20,7 @@ func (q *Queue) Enqueue(i int) {
 func (q *Queue) Dequeue() (int, error) {
 	// Check if Queue is Empty
 	if q.Len() == 0 {
-		return 0, errors.New("Queue is empty")
+		return 0, ErrEmptyQueue
 	}
 
 	// The Front of the Queue is at Index 0
