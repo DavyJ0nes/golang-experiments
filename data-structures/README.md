@@ -6,3 +6,4 @@ Looking at how to implement different data structures in Golang.
 
 - [Queue](./queue)
 - [Stack](./stack)
+- [Tree](./tree)
