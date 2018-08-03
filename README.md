@@ -17,6 +17,7 @@ Selection of experiments and investigations into the Golang language that I want
 - [Exploring Channels](./channels)
 - [Example Implementation of Singleton Pattern](./singleton)
 - [Exploring Algorithms](./algorithms)
+- [Looking at how to use Middleware in Web Services](./web-middleware)
 
 ## License
 
