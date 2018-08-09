@@ -28,7 +28,6 @@ func TestIndexHandler(t *testing.T) {
 	if string(body) != "Hey hey hey\n" {
 		t.Errorf("want: \"%v\", got: \"%v\"", "Hey hey hey\n", string(body))
 	}
-
 }
 
 func TestAPIHandler(t *testing.T) {
@@ -52,5 +51,4 @@ func TestAPIHandler(t *testing.T) {
 	if string(body) != `{"greeting": "Hey hey hey"}` {
 		t.Errorf("want: \"%v\", got: \"%v\"", `{"greeting": "Hey hey hey"}`, string(body))
 	}
-
 }
