@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 )
 
 func main() {
 	input := "Golang Experiments"
 	fmt.Printf("Input:\t%s\n\n", input)
+	fmt.Println("Num of GoRoutines", runtime.NumGoroutine())
 
 	output := Reverse(input)
 	fmt.Println("\nOutput:\t", output)

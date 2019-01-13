@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"runtime"
+	"testing"
+)
 
 func TestReverse(t *testing.T) {
 	type args struct {
@@ -32,6 +35,7 @@ func TestReverse(t *testing.T) {
 			if got := Reverse(tt.args.s); got != tt.want {
 				t.Errorf("got: %v, want: %v", got, tt.want)
 			}
+			t.Log("Num of GoRoutines", runtime.NumGoroutine())
 		})
 	}
 }
